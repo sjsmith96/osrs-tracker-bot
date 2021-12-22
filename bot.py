@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 
 from discord.ext import commands
 
-# OTIyOTk5MTQ1MDcyMDU0MzUy.YcJn8A.iKdYO_t_yzz5BVKQ-iYLUUYsXX0
-
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
