@@ -15,8 +15,20 @@ bot = commands.Bot(command_prefix='!')
 
 
 @bot.command(name='greeting')
-async def create_channel(ctx):
-    await ctx.send("Hello!")
+async def greet(ctx):
+    await ctx.send('Hello!')
+
+@bot.command(name='day')
+async def delta_day(ctx, player):
+    await ctx.send(f'You want the day changes for: {player}. Not implement yet!')
+
+@bot.command(name='week')
+async def delta_day(ctx, player):
+    await ctx.send(f'You want the week changes for: {player}. Not implement yet!')
+
+@bot.command(name='month')
+async def delta_day(ctx, player):
+    await ctx.send(f'You want the month changes for: {player}. Not implement yet!')
 
 @bot.event
 async def on_command_error(ctx, error):
